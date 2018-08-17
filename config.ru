@@ -1,3 +1,6 @@
-require './config/environment'
+require 'bundler'
+Bundler.require
 
-run ApplicationController
+require File.expand_path('../config/environment',  __FILE__)
+
+run KwkApp
